@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# CurrículoApp
 
-## Getting Started
+Uma plataforma completa para criar, organizar e gerenciar seus currículos profissionais.
 
-First, run the development server:
+## 🚀 Sobre o Projeto
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+O CurrículoApp é uma aplicação web desenvolvida com Next.js que permite aos usuários criar e gerenciar seus currículos de forma intuitiva e organizada. O projeto utiliza tecnologias modernas para oferecer uma experiência de usuário excepcional.
+
+## ✨ Funcionalidades
+
+- **Criação de Currículos**: Formulário avançado com validações e máscaras de input
+- **Interface Responsiva**: Design adaptável para desktop e mobile
+- **Tema Dark/Light**: Suporte para modo escuro e claro
+- **Validações Avançadas**: Campos obrigatórios com feedback em tempo real
+- **Notificações**: Sistema de toast para feedback das ações
+
+## 🛠️ Tecnologias Utilizadas
+
+- **Next.js 16** - Framework React para produção
+- **React 19** - Biblioteca para interfaces de usuário
+- **TypeScript** - JavaScript com tipagem estática
+- **Tailwind CSS 4** - Framework CSS utilitário
+- **React Hook Form** - Gerenciamento de formulários
+- **Yup** - Validação de schemas
+- **Sonner** - Notificações toast
+
+## 📦 Instalação e Execução
+
+1. **Clone o repositório**
+   ```bash
+   git clone <url-do-repositorio>
+   cd trabalho_cv
+   ```
+
+2. **Instale as dependências**
+   ```bash
+   npm install
+   ```
+
+3. **Execute o servidor de desenvolvimento**
+   ```bash
+   npm run dev
+   ```
+
+4. **Acesse no navegador**
+   ```
+   http://localhost:3000
+   ```
+
+## 📁 Estrutura do Projeto
+
+```
+trabalho_cv/
+├── app/                    # Páginas e layouts Next.js
+│   ├── componentes/        # Componentes reutilizáveis
+│   │   ├── header.tsx     # Cabeçalho do site
+│   │   ├── nav.tsx        # Navegação
+│   │   └── footer.tsx     # Rodapé
+│   ├── sistema/           # Sistema de currículos
+│   │   └── paginas/
+│   │       └── curriculos/ # Páginas de currículos
+│   ├── globals.css        # Estilos globais
+│   ├── layout.tsx         # Layout raiz
+│   └── page.tsx           # Página inicial
+├── components/            # Componentes UI
+│   └── ui/
+│       └── card.tsx       # Componente de cartão
+├── lib/                   # Utilitários
+└── public/                # Arquivos estáticos
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎯 Próximos Passos
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- [ ] Sistema de autenticação de usuários
+- [ ] Banco de dados para persistência
+- [ ] Edição completa de currículos
+- [ ] Templates de currículo
+- [ ] Exportação em PDF
+- [ ] Dashboard administrativo
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📄 Licença
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Este projeto está sob a licença MIT.
